@@ -1,0 +1,61 @@
+ul{
+    list-style: none;
+    margin-bottom: 0;
+}
+// .main{
+//     width: 1260px;
+//     margin: 0 auto;
+//     /* background: #f00; */
+// }
+#header, #header a{
+    font-size: 12px;
+    color: #ffffff;
+}
+#header .hTop{
+    height: 42px;
+    width: 100%;
+    background: #333333;
+}
+#header .main{
+    overflow: hidden;
+}
+#header .main .hLeft{
+    float: left;
+    height: 42px;
+    line-height: 42px;
+}
+#header .main .hLeft li{
+    display: inline-block;
+    padding-right: 12px;
+    font-size: 12px;
+    color: #ffffff;
+    position: relative;
+}
+#header .main .hLeft li .mobilePhone{
+    padding-right: 6px;
+}
+#header .main .hLeft li .webchat{
+    padding-left: 14px;
+    padding-right: 3px;
+}
+#header .main .hLeft li .kefuPhone{
+    padding-left: 14px;
+    padding-right: 4px;
+}
+#header .main .hLeft li .line{
+    width: 1px;
+    height: 17px;
+    top: 12px;
+    right: 0;
+    position: absolute;
+    display: inline-block;
+    background-color: #ffffff;
+}
+#header .main .hRight{
+    float: right;
+}
+#header .main .hRight li{
+    display: inline-block;
+    line-height: 42px;
+    padding:0 10px;
+}

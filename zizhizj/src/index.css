@@ -6,9 +6,42 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 12px;
+  color: #ffffff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.main{
+  width: 1260px;
+  margin: 0 auto;
+  /* background: #f00; */
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('./assets/font/iconfont.eot');
+  src: url('./assets/font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('./assets/font/iconfont.woff') format('woff'),
+  url('./assets/font/iconfont.ttf') format('truetype'),
+  url('./assets/font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
 }

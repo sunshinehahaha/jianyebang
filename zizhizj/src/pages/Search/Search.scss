@@ -1,0 +1,94 @@
+#Search{
+    .searchContent{
+        overflow: hidden;
+    }
+    .hotSearch{
+        margin-top: 15px;
+        padding-left: 300px;
+        font-size: 16px;
+        a{
+            padding-right: 10px;
+            display: inline-block;
+            color: #5e5e5e;
+        }
+        a:nth-of-type(2){
+            color: #f03e3e
+        }
+    }
+    .logo{
+        float: left;
+        width: 244px;
+        height: 59px;
+        margin-top: 45px;
+        margin-right: 54px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .searchInput{
+        float: left;
+        width: 510px;
+        height: 50px;
+        margin-top: 50px;
+        border: solid 1px #355c97;
+        .selection{
+            width: 103px;
+            height: 48px;
+            // display: inline-block;
+            float: left;
+            background-color: #f1f3f2;
+            font-size: 16px;
+            color: #4f4f4f;
+            line-height: 48px;
+            padding-left: 22px;
+            text-decoration: none;
+        }
+        .input{
+            // display: inline-block;
+            width: 302px;
+            height: 48px;
+            border: none;
+            outline: none;
+            float: left;
+            padding-left: 17px;
+        }
+        .fangdajing{
+            width: 103px;
+            height: 48px;
+            display: inline-block;
+            background-color: #355c97;  
+            line-height: 48px;
+            float: left;
+            height: 48px;
+            text-align: center;
+            .iconFangdajing{
+                font-size: 25px;
+                color: #ffffff;
+            }
+        }
+    }
+    .build{
+        width: 196px;
+        height: 50px;
+        float: left;
+        margin-left: 30px;
+        margin-top: 50px;
+        background-color: #355c97;
+        line-height: 50px;
+        text-align: center;
+        font-size: 18px;
+        color: #ffffff;
+        .zhengshu{
+            margin-right: 9px;
+            font-size: 21px;
+        }
+    }
+    .freePublic{
+        background-color: #ff9641;
+        .public{
+            font-size: 18px!important;
+            padding-right: 9px;
+        }
+    }
+}
