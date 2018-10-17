@@ -1,0 +1,147 @@
+#EnterQualificationService{
+    p{
+        margin: 0;
+    }
+    h3{
+        margin: 0;
+    }
+    margin-top: 50px;
+    width: 100%;
+    height: 754px;
+    background: url('./../../assets/service_bg.jpg') no-repeat center;
+    background-size: cover;
+    .EnterQuaService{
+        width: 363px;
+        margin: 0 auto;
+        position: relative;
+        h1{
+            text-align: center;
+            padding-top: 63px;
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 2.7px;
+            color: #ffffff;
+            letter-spacing: 2.7px;
+        }
+        .imgLine{
+            position: absolute;
+            top: 102px;
+            width: 363px;
+            height: 5px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .equityTransfer{
+        margin-top: 51px;
+        position: relative;
+        span:nth-of-type(1){
+            display: inline-block;
+            width: 151px;
+            height: 40px;
+            background-color: #f2471f;
+            line-height: 40px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold; 
+            color: #ffffff;
+        }
+        span:nth-of-type(2){
+            margin-left: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .line{
+            width: 342px;
+            height: 1px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: inline-block;
+            background-color: #f2471f;
+        }
+    }
+    .serviceList{
+        margin-top: 21px;
+        overflow: hidden;
+        .serviceItem{
+            width: 402px;
+            float: left;
+            margin-right: 18px;
+            height: 228px;
+            margin-bottom: 15px;
+            background-color: #ffffff;
+            box-shadow: -0.7px 0.7px 32px 0 rgba(0, 0, 0, 0.15);
+            .serviceItemTop{
+                margin: 16px 17px 0 19px;
+                // padding-top: 16px;   
+                overflow: hidden;
+                .serviceItemLeft{
+                    float: left;
+                    width: 267px;
+                    h3{
+                        font-size: 16px;
+                        color: #434446;
+                        font-weight: bold;
+                        margin-bottom: 0;
+                        margin-bottom: 29px;
+                    }
+                    .companyContain{
+                        color: #9c9d9a;
+                        font-size: 16px;
+                        span{
+                            font-size: 18px;
+                            color: #ff5234;
+                        }
+                    }
+                    .intro{
+                        font-size: 16px;
+                        color: #606060;
+                        margin-top: 16px;
+                    }
+                }
+                .serviceItemRight{
+                    float: right;
+                    width: 34px;
+                    .imgBox{
+                        width: 34px;
+                        height: 34px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .imgBox2{
+                        margin-top: 11px;
+                    }
+                }
+            }
+            .price{
+                color: #ff4a24;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: right;
+                padding-right: 18px;
+                margin-bottom: 18px;
+            }
+            .serviceItemBottom{
+                height: 47px;
+                width: 374px;
+                border-top: 1px dotted #a5a5a5;
+                margin: 0 auto;
+                line-height: 47px;
+                font-size: 16px;
+                color: #8c8c8c;
+                .iconfont{
+                    padding-right: 4px;
+                }
+                .item{
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+}

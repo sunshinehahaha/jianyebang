@@ -1,0 +1,110 @@
+#FreeQuotations{
+    height: 193px;
+    background: #f5f5f5;
+    // background: #f00;
+    padding-top: 20px;
+    .bgImg{
+        height: 154px;
+        width: 100%;
+        background: url('./../../assets/quotation_bg.png') no-repeat center;
+        background-size: cover;
+        .titleContent{
+            padding-top: 20px;
+            color: #ffffff;
+            h3{
+                display: inline-block;
+                font-size: 24px;
+                font-weight: bold;
+                color: #ffffff;
+                padding-right: 10px;
+            }
+            .line{
+                font-size: 20px;
+                margin-right: 10px;
+            }
+            .offerService{
+                font-size: 18px;
+                span{
+                    color: #f3471f;
+                }
+            }
+        }
+        .offerServiceBottom{
+            overflow: hidden;
+            .left{
+                float: left;
+                width: 452px;
+                height: 57px;
+                opacity: 0.83;
+                line-height: 57px;
+                font-size: 18px;
+                border: solid 1px #999999;
+                background-color: #ffffff;
+                .iconfont{
+                    // font-size: 26px;
+                }
+                .iconfont:first-of-type{
+                    margin-left: 13px;
+                    margin-right: 15px;
+                }
+                .iconfont:last-of-type{
+                    float: right;
+                    padding-right: 20px;
+                    font-size: 22px;
+                }
+                .spanLine{
+                    display: inline-block;
+                    width: 1px;
+                    height: 22px;
+                    opacity: 0.65;
+                    background-color: #7b7b7b;
+                }
+                .address{
+                    padding-left: 17px;
+                }
+                .spanLine{
+                    position: relative;
+                    top: 4px;
+                }
+            }
+            .center{
+                .inputContent{
+                    border: 0;
+                    outline: none;
+                    height: 50px;
+                    // float: left;
+                    display: inline-block;
+                    position: relative;
+                    top: -4px;
+                }
+                float: left;
+                width: 583px;
+                height: 57px;
+                opacity: 0.83;
+                border: solid 1px #999999;
+                background-color: #ffffff;
+                margin-left: 11px;
+                .iconfont{
+                    font-size: 25px;
+                }
+                .address{
+                    font-size: 18px;
+                    color: #292929;
+                }
+            }
+            .applyBtn{
+                margin-left: 14px;
+                float: left;
+                width: 200px;
+                height: 57px;
+                border: solid 1px #f3471f;
+                background-color: #f27521;
+                font-size: 24px;
+                color: #f5f5f5;
+                line-height: 57px;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+    }
+}

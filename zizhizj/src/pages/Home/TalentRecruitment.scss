@@ -1,0 +1,126 @@
+#TalentRecruitment{
+    h1,p{
+        margin: 0;
+        padding: 0;
+    }
+    .talentTitle{
+        width: 363px;
+        margin: 0 auto;
+        position: relative;
+        h1{
+            text-align: center;
+            // margin-top: 46px;
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 2.7px;
+            color: #222222;
+            letter-spacing: 2.7px;
+            padding-top: 57px;
+        }
+        .imgLine{
+            position: absolute;
+            top: 92px;
+            width: 363px;
+            height: 5px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .recruitContent{
+        margin-top: 44px;
+        .hengLine{
+            width: 1260px;
+            height: 1px;
+            background-color: #e2e2e2;
+        }
+        .recruitTitle{
+            a{
+                font-size: 18px;
+                font-weight: bold;
+                color: #9a9a9a;
+                position: relative;
+            }
+            a:first-of-type{
+                padding-right: 32px;
+            }
+            a:hover{
+                color: #f2471f;
+            }
+            a:hover span{
+                display: inline-block;
+                width: 46px;
+                position: absolute;
+                left: -5px;
+                top: 25px;
+                height: 3px;
+                box-shadow: 0px 3px 5px 0 rgba(242, 71, 31, 0.64);
+                background-color: #f2471f;
+            }
+        }
+        .recruitList{
+            margin-top: 39px;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .recruitItem{
+                width: 380px;
+                height: 122px;
+                // float: left;
+                box-shadow: -0.7px 0.7px 32px 0 rgba(0, 0, 0, 0.15);
+                border: solid 1px #cfcfcf;
+                background-color: #ffffff;
+                position: relative;
+                margin-right: 40px;
+                margin-bottom: 39px;
+                .top{
+                    display: inline-block;
+                    width: 41px;
+                    height: 41px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .troduce{
+                    margin-top: 16px;
+                    padding-left: 10px;
+                    font-size: 16px;
+                    color: #2c2c2c;
+                }
+                .company{
+                    margin-top: 12px;
+                    padding-left: 10px;
+                    font-size: 14px;
+                    color: #808080;
+                }
+                .department{
+                    margin-top: 10px;
+                    span{
+                        padding: 3px 2px;
+                        border: solid 1px #d1d1d1;
+                        font-size: 12px;
+                        // background-color: #303030; 
+                    }
+                    span:first-of-type{
+                        margin-right: 12px;
+                        margin-left: 5px;
+                    }
+                }
+                .salary{
+                    position: absolute;
+                    bottom: 17px;
+                    right: 11px;
+                    font-size: 17px;
+                    font-weight: bold;
+                    color: #ff4a24;
+                }
+            }
+        }
+    }
+}
