@@ -88,6 +88,10 @@
                         font-weight: bold;
                         margin-bottom: 0;
                         margin-bottom: 29px;
+                        width: 225px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
                     }
                     .companyContain{
                         color: #9c9d9a;
@@ -101,6 +105,10 @@
                         font-size: 16px;
                         color: #606060;
                         margin-top: 16px;
+                        width: 225px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
                     }
                 }
                 .serviceItemRight{
@@ -140,6 +148,18 @@
                 }
                 .item{
                     padding-right: 30px;
+                    float: left;
+                    .registMoney{
+                        display: inline-block;
+                        width: 132px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    .rmb{
+                        position: relative;
+                        top: -17px;
+                    }
                 }
             }
         }

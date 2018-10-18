@@ -1,6 +1,13 @@
 #TalentExam{
+    // .ant-carousel .slick-slide {
+    //     text-align: center;
+    //     width: 322px;
+    //     height: 237px;
+    //     overflow: hidden;
+    // }
     width: 100%;
     background: #f5f5f5;
+    padding-bottom: 32px;
     .talentExamTitle{
         width: 363px;
         margin: 0 auto;
@@ -68,14 +75,14 @@
             float: left;
             width: 758px;
             height: 413px;
-            background: #000;
+            // background: #000;
             span{
                 display: inline-block;
                 width: 348px;
                 height: 176px;
                 margin-top: 21px;
                 margin-left: 22px;
-                background: #f00;
+                background: pink;
                 img{
                     width: 100%;
                     height: 100%;
@@ -85,7 +92,7 @@
         .right{
             width: 282px;
             height: 413px;
-            background: #355c97;
+            // background: #355c97;
             float: left;
             padding-left: 7px;
             border-left: 1px solid#f5f5f5;
@@ -95,7 +102,246 @@
             } 
             .top{
                 height: 40px;
+                line-height: 40px;
+                span{
+                    color: #262626;
+                    font-size: 18px;
+                    margin-left: 4px;
+                }
+            }
+            .middleRight{
+                // height: 15px;
+                color: #515151;
+                font-size: 14px;
+                overflow: hidden;
+                line-height: 23px;
+                .iconfont{
+                    float: left;
+                }
+                .date{
+                    float: right;
+                    padding-right: 10px;
+                }
+                .textIntro{
+                    width: 195px;
+                    display: inline-block;
+                    overflow: hidden;
+                    // float: left;
+                    padding-left: 4px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
             }
         }
+    }
+    .Presignature{
+        height: 94px;
+        margin-top: 26px;
+        padding-bottom: 20px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .hotInfo{
+        overflow: hidden;
+        h2{
+            font-size: 20px;
+            font-weight: 900;
+            color: #2c2c2c;
+            float: left;
+            padding-left: 20px;
+        }
+        a{
+            float: right;
+            font-size: 20px;
+            color: #f61f1f;
+        }
+    }
+    .hotInfoContent{
+        overflow: hidden;
+        margin-top: 20px;
+        .hotInfoLeft{
+            float: left;
+            overflow: hidden;
+            width: 813px;
+            height: 265px;
+            box-shadow: -0.7px 0.7px 4.6px 0.5px rgba(0, 0, 0, 0.18);
+            background-color: #ffffff;
+            .leftImg{
+                width: 322px;
+                height: 237px;
+                float: left;
+                margin-top: 15px;
+                margin-left: 19px;
+                margin-right: 15px;
+                background: pink;
+            }
+            .leftContent{
+                float: left;
+                width: 452px;
+                .topNav{
+                    margin-top: 16px;
+                    .subCtrl{
+                        padding:0 17px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #5e5e5e;
+                        position: relative;
+                        span{
+                            display: inline-block;
+                            width: 2px;
+                            height: 13px;
+                            background: #5e5e5e;
+                            position: absolute;
+                            right: 0;
+                            top: 4px;
+                        }
+                    }
+                    a:last-of-type span{
+                        display: none;
+                    }
+                    a:first-of-type{
+                        padding-left: 0;
+                    }
+                    .active{
+                        color: #f60b0b;
+                        text-decoration: underline;
+                    }
+                }
+                .bottomContent{
+                    margin-top: 20px;
+                    p{
+                        overflow: hidden;
+                        // position: relative;
+                        line-height: 32px;
+                        .contentIntro{
+                            width: 310px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            // display: inline-block;
+                            float: left;
+                        }
+                        .square{
+                            display: inline-block;
+                            width: 10px;
+                            position: relative;
+                            top: 11px;
+                            left: 3px;
+                            height: 10px;
+                            background-color: #eb5404;
+                            margin-right: 10px;
+                            float: left;
+                        }
+                        .date{
+                            float: right;
+                            padding-right: 14px;
+                        }
+                        .square2{
+                            background-color: #f8aa00;
+                        }
+                        .square3{
+                            background-color: #ffe349;
+                        }
+                        .circle{
+                            width: 5px;
+                            height: 5px;
+                            margin-left: 3px;
+                            border-radius: 50%;
+                            display: inline-block;
+                            float: left;
+                            position: relative;
+                            top: 13px;
+                            left: 3px;
+                            margin-right: 10px;
+                            background-color: #c0c0c0;
+                        }
+                    }
+                }
+            }
+        }
+        .hotInfoRight{
+            width: 436px;
+            float: right;
+            height: 265px;
+            box-shadow: -0.7px 0.7px 4.6px 0.5px rgba(0, 0, 0, 0.18);
+            background-color: #ffffff;
+            h3{
+                margin: 0;
+                font-size: 18px;
+                color: #020605;;
+                margin-top: 31px;
+                margin-left: 39px;
+            }
+            .headlineArticle{
+                padding-left: 39px;
+                margin-top: 26px;
+                overflow: hidden;
+                .content{
+                    float: left;
+                    padding-left: 7px;
+                    width: 225px;
+                    h4{
+                        width: 205px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    p{
+                        text-indent: 18px;
+                        font-size: 14px;
+                        color:#a9abab;
+                        width: 225px;
+                        height: 40px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                }
+                img{
+                    width: 121px;
+                    height: 72px;
+                    float: left;
+                }
+            }
+            .list{
+                padding-left: 25px;
+                margin: 0;
+                .circle{
+                    width: 5px;
+                    height: 5px;
+                    margin-left: 3px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    float: left;
+                    position: relative;
+                    top: 6px;
+                    left: 3px;
+                    margin-right: 10px;
+                    background-color: #c0c0c0;
+                }
+                .contentIntro{
+                    width: 358px;
+                    display: inline-block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+            .list:first-of-type{
+                margin-top: 16px;
+            }
+        }
+    }
+    .ant-carousel .slick-slide {
+        text-align: center;
+        width: 322px;
+        height: 237px;
+        overflow: hidden;
+        line-height: 237px;
+    }
+    .ant-carousel .slick-slide h3 {
+        color: #fff;
     }
 }

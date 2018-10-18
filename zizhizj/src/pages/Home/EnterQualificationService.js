@@ -5,7 +5,7 @@ class EnterQualificationService extends React.Component {
         super(props)
         this.state = {
             EnterQuaServiceData: [
-                {projectName: '建筑-甲级-工程设计行业资质', projectNum: 1, content: '甲级-工程设计行业资质', imgSrc1: '', imgSrc2: '', price: '1800万', location: '北京', year: '2022年', registMoney: '4000万'},
+                {projectName: '建筑-甲级-工程设计行业资质工程设计行业资质工程设计行业资质', projectNum: 1, content: '甲级-工程设计行业资质', imgSrc1: '', imgSrc2: '', price: '1800万', location: '北京', year: '2022年', registMoney: '4000万'},
                 {projectName: '建筑-甲级-工程设计行业资质', projectNum: 1, content: '甲级-工程设计行业资质', imgSrc1: '', imgSrc2: '', price: '1800万', location: '北京', year: '2022年', registMoney: '4000万'},
                 {projectName: '建筑-甲级-工程设计行业资质', projectNum: 1, content: '甲级-工程设计行业资质', imgSrc1: '', imgSrc2: '', price: '1800万', location: '北京', year: '2022年', registMoney: '4000万'},
                 {projectName: '建筑-甲级-工程设计行业资质', projectNum: 1, content: '甲级-工程设计行业资质', imgSrc1: '', imgSrc2: '', price: '1800万', location: '北京', year: '2022年', registMoney: '4000万'},
@@ -65,8 +65,8 @@ class EnterQualificationService extends React.Component {
                                             <span>{item.year}</span>
                                         </span>
                                         <span className="item">
-                                            <i className="iconfont">&#xe631;</i>
-                                            <span>注册资金{item.registMoney}元</span>
+                                            <i className="iconfont rmb">&#xe631;</i>
+                                            <span className="registMoney">注册资金{item.registMoney}元</span>
                                         </span>
                                     </div>
                                 </div>

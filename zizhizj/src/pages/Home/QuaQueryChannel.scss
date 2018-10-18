@@ -53,6 +53,8 @@
         }
         .QuaConditions{
             margin-top: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ececec;
             h6{
                 display: inline-block;
                 font-size: 16px;
@@ -68,7 +70,69 @@
                 font-size: 22px;
                 color: #fff;
                 background-color: #ff8140;
+                position: relative;
+                top: 4px;
+            }
+            .inputNum{
+                width: 94px;
+                height: 42px;
+                border: solid 1px rgba(0, 85, 204, 0.67);
+                outline: none;
+                margin-right: 30px;
+                padding-left: 5px;
             }
         }
+        .choosed{
+            margin-top: 16px;
+            h6{
+                display: inline-block;
+                font-size: 16px;
+                color: #565656;
+                margin-right: 8px;
+            }
+            .itemBox{
+                a{
+                    font-size: 15px;
+                    color: #f81722;
+                    font-weight: 500;
+                }
+                margin-right: 8px;
+                margin-bottom: 20px;
+                border: solid 1px #ff552e;
+                background-color: #fff7f0; 
+                padding: 6px 8px 5px 9px;
+                display: inline-block;
+                span{
+                    padding-right: 7px;
+                    color: #ff552e;
+                    font-size: 13px;
+                    font-weight: 300;
+                }
+            }
+        }
+        .findMore{
+            text-align: center;
+            a{
+                display: inline-block;
+                width: 216px;
+                height: 46px;
+                border-radius: 23px;
+                box-shadow: 0px 6px 6px 0 rgba(53, 92, 151, 0.26);
+                background-color: #355c97;
+                border-radius: 23px;
+                font-size: 18px;
+                color: #ffffff;
+                line-height: 46px;
+            }
+        }
+        .findMoreContainer{
+            display: none;
+        }
+    }
+    .ant-select-selection--single{
+        height: 42px;
+    }
+    .ant-select-selection__rendered{
+        line-height: 38px;
     }
 }

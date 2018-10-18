@@ -30,18 +30,18 @@ class DirectoryOfConstEnter extends React.Component {
                     {
                         enterData && enterData.length <= 6 && enterData.map((item, index)=>{
                             return (
-                                <div className="directoryItem">
+                                <div className="directoryItem" key={index}>
                                     <div className="itemLeft">
                                         <img/>
                                     </div>
                                     <div className="itemInfo">
                                         <h3>{item.company}</h3>
                                         <p className="address">
-                                            <i class="iconfont">&#xe61e;</i>
+                                            <i className="iconfont">&#xe61e;</i>
                                             <span>地址：{item.address}</span>
                                         </p>
                                         <p className="contact-info">
-                                            <i class="iconfont">&#xe601;</i>
+                                            <i className="iconfont">&#xe601;</i>
                                             <span className="contact-person">
                                                 <span>联系人：{item.contactPerson}</span>
                                                 <span>联系电话：{item.contactTel}</span>

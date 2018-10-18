@@ -1,7 +1,8 @@
 import React from "react";
 import './QuaQueryChannel.scss'
-import { Select } from 'antd';
+import { Select} from 'antd';
 // import { timingSafeEqual } from "crypto";
+const Option = Select.Option;
 
 let enterpriseCreditRatingChildren = [] // 企业信用等级中的数据
 let largeClassData = [] // 大类中的数据
@@ -11,14 +12,6 @@ let levelData = [] // 等级中的数据
 let regionalData = [] // 地区范围
 let registeredData = [] // 注册地
 
-const Option = Select.Option;
-const provinceData = ['Zhejiang', 'Jiangsu'];
-const cityData = {
-  Zhejiang: ['Hangzhou', 'Ningbo', 'Wenzhou'],
-  Jiangsu: ['Nanjing', 'Suzhou', 'Zhenjiang'],
-};
-
-
 
 class QuaQueryChannel extends React.Component {
     constructor(props) {
@@ -27,13 +20,11 @@ class QuaQueryChannel extends React.Component {
             province: ['北京', '天津', '北京', '天津', '北京', '天津', '北京', '天津','北京', '天津', '北京', '天津','北京', '天津', '北京', '天津','北京', '天津', '北京', '天津','北京', '天津', '北京', '天津','北京', '天津', '北京', '天津'],
             enterpriseCreditRating: ['建筑业企业资质', '监理', '工程勘察', '工程设计', '设计施工一体化', '安全生产许可证', '房地产估价机构'],
             largeClass: ['haha'],
-            smallClass: ['小磊'],
+            smallClass: ['小类'],
             professional: ['专业专业专业'],
             level: ['等级'],
             regional: ['地区范围'],
-            registered: ['注册地'],
-            cities: cityData[provinceData[0]],
-            secondCity: cityData[provinceData[0]][0]
+            registered: ['注册地']
         }
     }
 
@@ -106,6 +97,24 @@ class QuaQueryChannel extends React.Component {
         for(let c in registered) {
             registeredData.push(<Option key={registered[c]}>{registered[c]}</Option>)
         }
+    }
+
+    // 删除某个元素
+    deleteItem(event) {
+        let e = event ||window.event
+        let currentEle = e.target
+        let parentEle = currentEle.parentNode
+        parentEle.parentNode.removeChild(parentEle)
+    }
+
+    // 展开更多
+    showMore(event) {
+        let e = event ||window.event
+        let currentEle = e.target
+        let parentEle = currentEle.parentNode
+        parentEle.parentNode.removeChild(parentEle)
+        let findMoreContainer = document.querySelector('.findMoreContainer')
+        findMoreContainer.style.display = 'block'
     }
 
 	render() {
@@ -185,6 +194,126 @@ class QuaQueryChannel extends React.Component {
                         </Select>
                         <a className="addChoose">添加筛选</a>
                     </div>
+                    <div className="choosed">
+                        <h6>已选：</h6>
+                        <span className="itemBox">
+                            <span>1建筑业企业资质 /专业承包 / 钢结构工程专业承包 /一级 /全国 </span>
+                            <a onClick={self.deleteItem.bind(this)}>X</a>
+                        </span>
+                        <span className="itemBox">
+                            <span>2建筑业企业资质 /专业承包 / 钢结构工程专业承包 /一级 /全国 </span>
+                            <a>X</a>
+                        </span>
+                        <span className="itemBox">
+                            <span>3建筑业企业资质 /专业承包 / 钢结构工程专业承包 /一级 /全国 </span>
+                            <a>X</a>
+                        </span>
+                        <span className="itemBox">
+                            <span>4建筑业企业资质 /专业承包 / 钢结构工程专业承包 /一级 /全国 </span>
+                            <a>X</a>
+                        </span>
+                    </div>
+
+                    <div className="QuaConditions">
+                        <h6>人员条件：</h6>
+                        <Select
+                            defaultValue="资质类别"
+                            onChange={this.enterCreditHandleChange.bind(this)}
+                            style={{height: 42, marginRight: 10}}
+                            >
+                            {enterpriseCreditRatingChildren}
+                        </Select>
+                        <Select
+                            defaultValue="资质名称"
+                            onChange={this.largeClassHandleChange.bind(this)}
+                            style={{height: 42, marginRight: 10}}
+                            >
+                            {largeClassData}
+                        </Select>
+                        <Select
+                            defaultValue="名称/等级"
+                            onChange={this.smallClassHandleChange.bind(this)}
+                            style={{height: 42, marginRight: 10}}
+                            >
+                            {smallClassData}
+                        </Select>
+                        <Select
+                            defaultValue="专业"
+                            onChange={this.professionalHandleChange.bind(this)}
+                            style={{height: 42, marginRight: 10}}
+                            >
+                            {professionalData}
+                        </Select>
+                        <h6>人数：</h6>
+                        <input className="inputNum"/>
+                        <a className="addChoose">添加筛选</a>
+                    </div>
+                    <div className="choosed">
+                        <h6>已选：</h6>
+                        <span className="itemBox">
+                            <span>1建筑业企业资质 /专业承包 / 钢结构工程专业承包 /一级 /全国 </span>
+                            <a onClick={self.deleteItem.bind(this)}>X</a>
+                        </span>
+                        <span className="itemBox">
+                            <span>2建筑业企业资质 /专业承包 / 钢结构工程专业承包 /一级 /全国 </span>
+                            <a>X</a>
+                        </span>
+                        <span className="itemBox">
+                            <span>3建筑业企业资质 /专业承包 / 钢结构工程专业承包 /一级 /全国 </span>
+                            <a>X</a>
+                        </span>
+                        <span className="itemBox">
+                            <span>4建筑业企业资质 /专业承包 / 钢结构工程专业承包 /一级 /全国 </span>
+                            <a>X</a>
+                        </span>
+                    </div>
+                    <div className="findMore">
+                        <a onClick={this.showMore.bind(this)}>展开查看更多</a>
+                    </div>
+                    <div className="findMoreContainer">
+                        <div className="QuaConditions">
+                            <h6>业绩筛选：</h6>
+                            <h6>项目名称：</h6>
+                            <input className="inputNum"/>
+                            <h6>业绩类型：</h6>
+                            <Select
+                                defaultValue="监理"
+                                onChange={this.enterCreditHandleChange.bind(this)}
+                                style={{height: 42, marginRight: 10}}
+                                >
+                                {enterpriseCreditRatingChildren}
+                            </Select>
+                            <h6>项目类别：</h6>
+                            <Select
+                                defaultValue="所有"
+                                onChange={this.largeClassHandleChange.bind(this)}
+                                style={{height: 42, marginRight: 10}}
+                                >
+                                {largeClassData}
+                            </Select>
+                            <a className="addChoose">添加筛选</a>
+                        </div>
+                        <div className="choosed">
+                            <h6>已选：</h6>
+                            <span className="itemBox">
+                                <span>1建筑业企业资质 /专业承包 / 钢结构工程专业承包 /一级 /全国 </span>
+                                <a onClick={self.deleteItem.bind(this)}>X</a>
+                            </span>
+                            <span className="itemBox">
+                                <span>2建筑业企业资质 /专业承包 / 钢结构工程专业承包 /一级 /全国 </span>
+                                <a>X</a>
+                            </span>
+                            <span className="itemBox">
+                                <span>3建筑业企业资质 /专业承包 / 钢结构工程专业承包 /一级 /全国 </span>
+                                <a>X</a>
+                            </span>
+                            <span className="itemBox">
+                                <span>4建筑业企业资质 /专业承包 / 钢结构工程专业承包 /一级 /全国 </span>
+                                <a>X</a>
+                            </span>
+                        </div>
+                    </div>
+
                 </div>
 			</div>                              
 		)

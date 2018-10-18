@@ -1,5 +1,6 @@
 import React from "react";
 import './CompanyPurchase.scss'
+import { Carousel } from 'antd'
 class CompanyPurchase extends React.Component {
     constructor(props) {
         super(props)
@@ -8,12 +9,13 @@ class CompanyPurchase extends React.Component {
                 {location: '四川', content: '收购建筑资质，收购建筑资质', intro: '建筑工程施工总承包资质一级', ask: '无债务纠纷，信用良好等', way: '面议', contactPerson: '王哥', contactTel: '028-66565655'},
                 {location: '四川', content: '收购建筑资质，收购建筑资质', intro: '建筑工程施工总承包资质一级', ask: '无债务纠纷，信用良好等', way: '面议', contactPerson: '王哥', contactTel: '028-66565655'},
                 {location: '四川', content: '收购建筑资质，收购建筑资质', intro: '建筑工程施工总承包资质一级', ask: '无债务纠纷，信用良好等', way: '面议', contactPerson: '王哥', contactTel: '028-66565655'}
-                ]
+                ],
+            purchaseImgs: [require('./../../assets/wanttobuy_ad.jpg'), require('./../../assets/wanttobuy_ad.jpg'), require('./../../assets/wanttobuy_ad.jpg')]
         }
     }
 
 	render() {
-        const {companyPurchaseData} = this.state
+        const {companyPurchaseData, purchaseImgs} = this.state
 		return (
 			<div id="CompanyPurchase">
                 <div className="main">
@@ -57,7 +59,15 @@ class CompanyPurchase extends React.Component {
                         }
                         </div>
                         <div className="rightImg">
-                            <img src={require('./../../assets/wanttobuy_ad.jpg')}/>
+                            <Carousel autoplay>
+                                {
+                                    purchaseImgs && purchaseImgs.map((item, index)=>{
+                                        return (
+                                                <div key={index}><img src={item}/></div>
+                                        )
+                                    })
+                                }
+                            </Carousel>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,108 @@
+#Footer{
+    width: 100%;
+    height: 346px;
+    background-color: #355c97;
+    overflow: hidden;
+    .main{
+        overflow: hidden;
+    }
+    .footerLeft{
+        padding-top: 41px;
+        overflow: hidden;
+        float: left;
+        .about{
+            float: left;
+            margin-right: 48px;
+            h3{
+                font-size: 18px;
+                color: #ffffff;
+            }
+            ul{
+                margin-top: 21px;
+                li{
+                    line-height: 26px;
+                    a{
+                        font-size: 14px;
+                        color: #cfcfcf;
+                    }
+                }
+            }
+        }
+    }
+    .footerRight{
+        float: right;
+        overflow: hidden;
+        padding-top: 45px;
+        dl{
+            float: left;
+            margin-right: 35px;
+            dt{
+                font-size: 14px;
+                color: #bfc2c8;
+                margin-top: 11px;
+                text-align: center;
+            }
+        }
+        .timePlan{
+            float: left;
+            p{
+                margin: 0;
+                padding: 0;
+            }
+            .tel{
+                font-size: 18px;
+                font-weight: 900;
+                color: #ffffff;
+                .iconfont{
+                    font-size: 20px;
+                    margin-right: 5px;
+                    font-weight: lighter;
+                }
+            }
+            .week{
+                font-size: 14px;
+                font-weight: 500;
+                color: #cfcfcf;
+            }
+            .qqkeFu{
+                margin-top: 15px;
+                font-size: 18px;
+                font-weight: 900;
+                color: #ffffff;
+                .iconfont{
+                    font-weight: lighter;
+                    margin-right: 5px;
+                }
+            }
+            .email{
+                margin-top: 18px;
+                font-size: 16px;
+                font-weight: 900;
+                color: #ffffff;
+            }
+        }
+    }
+    .footerLine{
+        width: 1262px;
+        height: 1px;
+        opacity: 0.43;
+        background-color: #ffffff;
+        margin-top: 20px;
+    }
+    .footerBottom{
+        overflow: hidden;
+        p{
+            float: left;
+            margin-top: 50px;
+            color: #cfcfcf;
+            font-size: 14px;
+            padding-left: 5px;
+        }
+        img{
+            float: right;
+            width: 244px;
+            height: 59px;
+            margin-top: 19px;
+        }
+    }
+}

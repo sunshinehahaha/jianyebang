@@ -82,16 +82,28 @@
                     font-size: 18px;
                     font-weight: bold;
                     color: #2e2e2e;
+                    width: 270px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
                 .intro{
                     margin-top: 15px;
                     font-size: 14px;
                     color: #2e2e2e;
+                    width: 270px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
                 .ask{
                     margin-top: 12px;
                     font-size: 14px;
                     color: #939393;
+                    width: 270px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
                 .faceToFace{
                     // float: right;
@@ -107,6 +119,10 @@
                     border-top: 1px solid rgba(0,0,0,0.15);
                     margin-right: 10px;
                     margin-top: 5px;
+                    overflow: hidden;
+                    span{
+                        float: left;
+                    }
                     .location{
                         padding-right: 42px;
                         .iconfont{
@@ -115,6 +131,14 @@
                     }
                     .contactPerson{
                         padding-right: 50px;
+                    }
+                    .contactTel{
+                        display: inline-block;
+                        width: 165px;
+                        overflow: hidden;
+                        line-height: 33px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
                     }
                 }
             }
@@ -125,8 +149,15 @@
             height: 419px;
             img{
                 width: 100%;
-                height: 100%;
+                // height: 100%;
+                height: 419px;
             }
         }
+    }
+    .ant-carousel .slick-slide {
+        text-align: center;
+        height: 419px;
+        width: 304px;
+        overflow: hidden;
     }
 }

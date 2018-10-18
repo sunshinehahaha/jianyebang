@@ -8,7 +8,7 @@
             line-height: 50px;
             position: relative;
             text-align: center;
-            a{
+            a.navTab{
                 font-size: 18px;
                 font-weight: bold;
                 color: #3e3e3e;
@@ -40,11 +40,116 @@
             background-color: #f2471f;
             line-height: 50px;
             text-align: center;
+            position: relative;
             cursor: pointer;
             span{
                 font-size: 16px;
                 color: #fff;
             }
+            .serviceGuideContainer{
+                // overflow: hidden;
+                position: absolute;
+                z-index: 10;
+                display: none;
+                li.navTabTwo{
+                    width: 100%;
+                    height: 76px;
+                    line-height: 76px;
+                    // opacity: 0.5;
+                    // overflow: hidden;
+                    background-color: rgba(0,0,0,0.5);
+                    a{
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #fff;
+                        text-align: left;
+                        padding-left: 20px;
+                        float: left;
+                    }
+                    .iconfont{
+                        color: #fff;
+                        font-size: 26px;
+                        padding-right: 23px;
+                        float: right;
+                    }
+                }
+                li.navTabTwo:hover{
+                    background-color: #ffffff;
+                }
+                li.navTabTwo:hover a{
+                    color: #161616;
+                }
+                li.navTabTwo:hover .iconfont{
+                    color: #161616;
+                }
+                .navTabTwoContainer{
+                    position: relative;
+                    .navTabThree{
+                        width: 1020px;
+                        height: 460px;
+                        background-color: #ffffff;
+                        z-index: 1000;
+                        position: absolute;
+                        left: 240px;
+                        display: none;
+                        padding-bottom: 20px;
+                        .left{
+                            width: 640px;
+                            float: left;
+                            li{
+                                display: inline-block;
+                                line-height: 70px;
+                                margin-right: 40px;
+                                margin-bottom: 30px;
+                                a{
+                                    color: #161616;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                }
+                                a:hover{
+                                    color: #f2471f;
+                                    text-decoration: underline;
+                                }
+                            }
+                            .imgSize{
+                                width: 283px;
+                                height: 169px;
+                                background: hotpink;
+                                float: left;
+                                margin-left: 15px;
+                                margin-top: 30px;
+                            }
+                        }
+                        .right{
+                            width: 335px;
+                            float: right;
+                            height: 419px;
+                            background: #f2471f;
+                            text-align: center;
+                            margin-right: 45px;
+                            margin-top: 29px;
+                            // line-height: 419px;
+                        }
+                    }
+                }
+                .navTabTwoContainer:hover .navTabThree{
+                    display: block;
+                }
+            }
         }
+        .serviceGuide:hover .serviceGuideContainer{
+            display: block;
+        }
+    }
+    .ant-carousel .slick-slide {
+        text-align: center;
+        height: 419px;
+        line-height: 419px;
+        background: #364d79;
+        width: 335px;
+        overflow: hidden;
+    }
+    .ant-carousel .slick-slide h3 {
+        color: #fff;
     }
 }

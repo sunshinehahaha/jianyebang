@@ -11,6 +11,7 @@ import CompanyPurchase from './CompanyPurchase'
 import DirectoryOfConstEnter from './DirectoryOfConstEnter'
 import TalentRecruitment from './TalentRecruitment'
 import TalentExam from './TalentExam'
+import Footer from './../Footer/Footer'
 
 class Home extends React.Component {
     constructor(props) {
@@ -78,6 +79,7 @@ class Home extends React.Component {
                 <DirectoryOfConstEnter/>
                 <TalentRecruitment/>
                 <TalentExam/>
+                <Footer/>
 			</div>
 		)
 	}
